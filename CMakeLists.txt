@@ -14,4 +14,4 @@ target_sources(${target} PRIVATE
     vfs_file_demo.c
  )
 
-target_link_libraries_if(CONFIG_OSA_LINK_SYSTEM_LIBRARIES_FUNC THEN ${target} system_os)
+target_link_libraries_if(CONFIG_QOSA_LINK_SYSTEM_LIBRARIES_FUNC THEN ${target} system_os)

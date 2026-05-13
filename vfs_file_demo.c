@@ -17,6 +17,7 @@
 #include "qosa_def.h"
 #include "qosa_sys.h"
 #include "qosa_virtual_file.h"
+#include "unirtos_app_init_registry.h"
 
 #define QOS_LOG_TAG                   LOG_TAG
 
@@ -238,3 +239,5 @@ void unir_vfs_demo_init(void)
         return;
     }
 }
+
+UNIRTOS_APP_EXPORT(320, "vfs_demo", unir_vfs_demo_init);
